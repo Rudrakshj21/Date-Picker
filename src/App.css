@@ -1,38 +1,74 @@
-.App {
-  text-align: center;
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  font-size: 40px;
+  color: wheat;
+  background: linear-gradient(to left,pink,rgb(203, 68, 90));
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main{
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  gap: 10px;
+  background-color: rgb(29, 46, 47);
+  padding:50px;
+  border-radius: 20px;
+  box-shadow: 0px 2px 21px 1px;
+
 }
 
-.App-link {
-  color: #61dafb;
+.slider-wrapper{
+  border-radius: 20px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.slider-wrapper input{
+  padding: 20px;
+  -webkit-appearance: none;
+  appearance: none;
+  
+  background: #f0f7ff;
+  cursor: pointer;
+  width: 15rem;
+  border-radius: 20px;
+}
+
+.slider-wrapper input::-webkit-slider-runnable-track {
+  background: #8ab6d6; /* Change this color to the color you want for the track */
+  border-radius: 20px;
+  height: 16px; /* Adjust the height of the track */
+}
+
+.input-wrapper{
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.input-wrapper input , .input-wrapper button{
+  padding: 10px;
+  font-size: 40px;
+}
+.input-wrapper button{
+  cursor: pointer;
+  border: none;
+  background-color: aquamarine;
+  border-radius: 20%;
+  padding: 20px;
+  font-size: 40px;
+}
+.reset{
+  padding: 20px;
+  width: 150px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.off{
+  display: none;
 }
